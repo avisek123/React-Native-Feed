@@ -26,3 +26,5 @@ The react native code is executed over three threads:
 2. **Native/UI Thread** : Runs native code and manages user interface operations like rendering and handling gesture events.
 
 3. **Shadow Thread**: Calculates the layout positions of native elements before rendering.
+
+The relationship between the JavaScript and Native threads is mediated by a component called the Bridge.
