@@ -13,3 +13,4 @@ The topics we learn:
 - **What is Hermes Engine ?**
 - **Turbo Modules**
 - **Fabric (New Rendering Engine)**
+- **What is Nitro Module**
