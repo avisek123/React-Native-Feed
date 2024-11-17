@@ -30,3 +30,11 @@ The react native code is executed over three threads:
 The relationship between the JavaScript and Native threads is mediated by a component called the **Bridge**.
 
 ![React-Native-Architecture-1](https://github.com/user-attachments/assets/d0ae2efd-4966-461b-b81d-a2b1718b0a65)
+
+- **OLD Architecture drawbacks**
+
+In the old architecture, the bridge works by converting all data into a format that can be sent from JavaScript to native code.
+
+The Bridge have some limitations:
+
+- **It is asynchronous:** One layer sends data to the bridge and waits for the other layer to process it, even when it’s not needed.
