@@ -38,3 +38,4 @@ In the old architecture, the bridge works by converting all data into a format t
 The Bridge have some limitations:
 
 - **It is asynchronous:** One layer sends data to the bridge and waits for the other layer to process it, even when it’s not needed.
+- **It is single threaded:** JavaScript used to run on just one thread, so all calculations had to happen on that one thread.
