@@ -14,3 +14,20 @@ The topics we learn:
 - **Turbo Modules**
 - **Fabric (New Rendering Engine)**
 - **What is Nitro Module**
+
+Let’s dive into each of the new points.
+
+- **OLD architecture**
+  The react native code is executed over three threads:
+
+1. **JavaScript Thread**
+
+Executes the JavaScript bundle using a specific JavaScript engine.
+
+2. **Native/UI Thread**
+
+Runs native code and manages user interface operations like rendering and handling gesture events.
+
+3. **Shadow Thread**
+
+Calculates the layout positions of native elements before rendering.
