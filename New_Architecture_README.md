@@ -39,3 +39,4 @@ The Bridge have some limitations:
 
 - **It is asynchronous:** One layer sends data to the bridge and waits for the other layer to process it, even when it’s not needed.
 - **It is single threaded:** JavaScript used to run on just one thread, so all calculations had to happen on that one thread.
+- **Overhead costs:** Every time one layer communicates with another, it has to convert the data into a format (serialize) and the other layer has to convert it back (deserialize). JSON was chosen because it’s simple and easy to read, but even though it's lightweight, it still comes with some performance cost
