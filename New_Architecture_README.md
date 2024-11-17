@@ -27,7 +27,6 @@ The react native code is executed over three threads:
 
 3. **Shadow Thread**: Calculates the layout positions of native elements before rendering.
 
-The relationship between the JavaScript and Native threads is mediated by a component called the Bridge.
+The relationship between the JavaScript and Native threads is mediated by a component called the **Bridge**.
 
 ![React-Native-Architecture-1](https://github.com/user-attachments/assets/d0ae2efd-4966-461b-b81d-a2b1718b0a65)
-
