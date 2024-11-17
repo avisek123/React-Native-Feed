@@ -15,7 +15,7 @@ The topics we learn:
 - **Fabric (New Rendering Engine)**
 - **What is Nitro Module**
 
-Let’s dive into each of the new points.
+Let’s dive into each of the points.
 
 # OLD architecture
 
