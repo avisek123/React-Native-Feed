@@ -31,7 +31,7 @@ The relationship between the JavaScript and Native threads is mediated by a comp
 
 ![React-Native-Architecture-1](https://github.com/user-attachments/assets/d0ae2efd-4966-461b-b81d-a2b1718b0a65)
 
-- **OLD Architecture drawbacks**
+# OLD Architecture drawbacks
 
 In the old architecture, the bridge works by converting all data into a format that can be sent from JavaScript to native code.
 
