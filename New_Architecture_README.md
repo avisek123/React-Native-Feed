@@ -17,7 +17,8 @@ The topics we learn:
 
 Let’s dive into each of the new points.
 
-**OLD architecture**
+# OLD architecture
+
 The react native code is executed over three threads:
 
 1. **JavaScript Thread**: Executes the JavaScript bundle using a specific JavaScript engine.
