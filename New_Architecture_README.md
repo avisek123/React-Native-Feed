@@ -45,8 +45,8 @@ The Bridge have some limitations:
 
 The New Architecture dropped the concept of The Bridge in favour of the JavaScript Interface (JSI), with new components, which increased performance (the new architecture is available starting from RN 0.68).
 
-- **All components of New Architecture**
-  Let’s know all the name of the components of New Architecture
+**All components of New Architecture**
+Let’s know all the name of the components of New Architecture
 
 ### 1. **Codegen (Native Code Generator)**
 
