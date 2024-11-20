@@ -62,6 +62,4 @@ Let’s know all the name of the components of New Architecture
 
 ### 7. **Yoga**
 
-### 8. **Herms Engine**
-
-### 9. **Nitro Modules**
+### 8. **Nitro Modules**
