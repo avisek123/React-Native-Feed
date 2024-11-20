@@ -40,3 +40,50 @@ The Bridge have some limitations:
 - **It is asynchronous:** One layer sends data to the bridge and waits for the other layer to process it, even when it’s not needed.
 - **It is single threaded:** JavaScript used to run on just one thread, so all calculations had to happen on that one thread.
 - **Overhead costs:** Every time one layer communicates with another, it has to convert the data into a format (serialize) and the other layer has to convert it back (deserialize). JSON was chosen because it’s simple and easy to read, but even though it's lightweight, it still comes with some performance cost
+
+# New Architecture of React Native
+
+The New Architecture dropped the concept of The Bridge in favour of the JavaScript Interface (JSI), with new components, which increased performance (the new architecture is available starting from RN 0.68).
+
+- **All components of New Architecture**
+  Let’s know all the name of the components of New Architecture
+
+### 1. **Codegen (Native Code Generator)**
+
+- Automates the generation of native code for TurboModules and Fabric components.
+- Ensures type-safe and efficient integration between JavaScript and native code.
+- Simplifies the process of bridging JavaScript with native platforms by generating boilerplate code for developers.
+- Plays a key role in the new React Native architecture by reducing manual coding efforts.
+
+### 2. **Hermes Engine**
+
+- A lightweight JavaScript engine optimized for React Native apps.
+- Key benefits:
+  - Faster startup time.
+  - Lower memory usage.
+  - Ahead-of-time (AOT) compilation for improved performance.
+
+### 3. **JSI (JavaScript Interface)**
+
+- A low-level, high-performance interface for JavaScript to interact directly with native modules.
+- Eliminates the need for JSON serialization used in the older bridge architecture.
+
+### 4. **Turbo Modules**
+
+- Implements native modules using the JSI and native code.
+- Provides a more efficient and dynamic way to load and interact with native modules in React Native.
+
+### 5. **Fabric**
+
+- The new rendering engine for React Native, replacing the older rendering architecture.
+- Focuses on improved UI performance and threading management.
+
+### 6. **Fabric Renderer**
+
+- The new render pipeline in React Native, built as part of the Fabric engine.
+- Enables concurrent rendering for better performance and responsiveness.
+
+### 7. **Yoga**
+
+- A cross-platform layout engine used for calculating layout and rendering views.
+- Also utilized in the old React Native architecture.
